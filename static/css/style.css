@@ -1,0 +1,84 @@
+body {
+    background: linear-gradient(135deg, #ff6f91, #ff8e53);
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+/* Blurred Circles Background */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 10%, transparent 70%),
+                radial-gradient(circle at 70% 30%, rgba(255, 255, 255, 0.3) 15%, transparent 60%),
+                radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.2) 10%, transparent 50%);
+    filter: blur(50px);
+    z-index: 1;
+}
+
+/* Profile Card */
+.profile-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    width: 100%;
+    max-width: 350px;
+    position: relative;
+    z-index: 2;
+    border: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Image */
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Title (Name) */
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+/* Card Text (Location and Job) */
+.card-text {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Stats */
+h6 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+
+small {
+    font-size: 0.75rem;
+}
+
+/* See More Button */
+.see-more-btn {
+    background: linear-gradient(135deg, #ff6f91, #ff8e53);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: transform 0.2s ease;
+}
+
+.see-more-btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #ff8e53, #ff6f91);
+}

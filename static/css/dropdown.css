@@ -1,0 +1,24 @@
+  /* Custom styles for the dropdown */
+        .scalable-dropdown {
+            max-height: 200px; /* Adjust height to show ~5-7 items (assuming ~30-40px per item) */
+            overflow-y: auto; /* Enable vertical scrolling */
+            scrollbar-width: thin; /* For Firefox */
+        }
+
+        /* Webkit browsers (Chrome, Safari) scrollbar styling */
+        .scalable-dropdown::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .scalable-dropdown::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        .scalable-dropdown::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
+        }
+
+        .scalable-dropdown::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #1e3a8a, #6b21a8);
+            color: white;
+        }
+        .notification {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            max-width: 600px;
+            backdrop-filter: blur(10px);
+        }
+        .notification h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #ffeb3b;
+        }
+        .notification p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .notification a {
+            color: #ffeb3b;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: 2px solid #ffeb3b;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .notification a:hover {
+            background-color: #ffeb3b;
+            color: #1e3a8a;
+        }
+    </style>
+</head>
+<body>
+    <div class="notification">
+        <h2>404</h2>
+        <p>Oops! The data you're looking for doesn't exist.</p>
+        <p><a href="/">Go back to home</a></p>
+        <p>{{error_message}}</p>
+    </div>
+</body>
+</html>

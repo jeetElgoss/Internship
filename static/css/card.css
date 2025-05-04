@@ -1,0 +1,48 @@
+.card {
+            max-width: 400px;
+            margin: 50px auto;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            background: linear-gradient(135deg, #ffffff, #f8f9fa);
+        }
+        .card-header {
+            background: #007bff;
+            color: white;
+            border-radius: 15px 15px 0 0;
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .card-body {
+            padding: 30px;
+        }
+        .form-label {
+            font-weight: 500;
+            color: #333;
+        }
+        .form-select, .btn {
+            border-radius: 8px;
+            padding: 10px;
+            transition: all 0.3s ease;
+        }
+        .form-select:focus, .btn:focus {
+            box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+            border-color: #007bff;
+        }
+        .btn-primary {
+            background: #007bff;
+            border: none;
+        }
+        .btn-primary:hover {
+            background: #0056b3;
+        }
+        .dropdown-menu {
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        .dropdown-item:hover {
+            background: #e9ecef;
+        }
